@@ -42,6 +42,8 @@ header {
     flex-wrap: wrap;
 }
 
+
+
 .logo img {
     height: 50px;
     width: auto;
@@ -134,6 +136,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
+
 /* Sign Up Container */
 .signup-container {
     display: flex;
@@ -167,3 +170,32 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 2.5px solid #c2c2c2;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 2;
+  margin: 2;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+#myMenu li a:hover {
+  background-color: #EAC79A;
+}
+
+

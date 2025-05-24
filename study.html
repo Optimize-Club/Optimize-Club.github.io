@@ -33,39 +33,73 @@
 
     <section class="hero">
         <div class="container">
-            <h2>Become That Academic Weapon</h2>
-            <p></p>
-            <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=aq_-er6xg0ypdMQ6iyFWNEa--uV6udFBpgY8LU37qQRURFFGTkw2Mk5XWkxCS1JJN1JXTFVRNVlIRi4u&origin=lprLink&route=shorturl" class="btn">Join Our Club!</a>
+            <h2>Our Study Tips</h2>
+           
         </div>
     </section>
 
     <section class="about">
         <div class="container about-flex">
             <div class="about-text">
-                <h3>About Us</h3>
+                <h3></h3>
                 <p>Optimize is more than just a study club — it's a community where you learn how to learn, master time management, and develop lifelong skills.
 We equip you with the tools, habits, and mindset to become the best version of yourself — in school, work, and life.</p>
 <br>
+			 <div class="card">
+      <h2>Search our Presentation List</h2>
+		  <input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." title="Type in a category">
 
-				<p> Join us every SDL day period 3 in Room 106! </p>
+  <ul id="myMenu">
+    <li><a href="intro.html">Introduction To Study Skills</a></li>
+    <li><a href="growth.html">Growth Mindset</a></li>
+	<li><a href="stress.html">How to Handle Exam Stress</a></li>
+	<li><a href="failure.html">How to Handle Failure</a></li>
+	<li><a href="note.html">Note taking</a></li>
+	<li><a href="habit.html">How to build habits</a></li>
+	
+  </ul>
+
+	  
+
+    </div>
+			
             </div>
             <div class="about-image">
-                <iframe width="200" height="355" 
-src="https://www.youtube.com/embed/njfX6nH8wec" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-gyroscope; picture-in-picture;
-web-share"
-allowfullscreen></iframe>
+               <iframe src="https://hwdsbonca-my.sharepoint.com/personal/dcosma1363_hwdsb_on_ca/_layouts/15/Doc.aspx?sourcedoc={9f76aa91-4ef0-474a-b037-a83cbccf2f06}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="619px" height="375px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
             </div>
         </div>
+
     </section>
 
+	
+		   
+	
     <footer>
         <div class="container">
             <p>This website is operated by the student leaders of The Optimize Club</p>
         </div>
     </footer>
+	
+	<script>
+  function Search() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
 </body>
 </html>
