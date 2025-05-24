@@ -10,209 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
 </head>
 
-<styles>
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Playfair Display', serif;
-    background-color: #f0f6f6;
-    color: #252f3a;
-    line-height: 1.6;
-}
-
-/* Color Palette */
-:root {
-    --blue: #D5EBF1;
-    --dark-blue: #A7D5E2;
-    --white: #F0F6F6;
-	--darkest:#3D4D5F;
-	--yellow:#EAC79A;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background-color: var(--white);
-    color: var(--dark-blue);
-    padding: 1rem 0;
-}
-
-.header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-
-.logo img {
-    height: 50px;
-    width: auto;
-}
-
-header h1 {
-    font-size: 1.8rem;
-    margin-left: 1rem;
-    flex-grow: 1;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-nav a {
-	
-    color: var(--darkest);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-	
-    color: var(--dark-blue);
-}
-
-/* Hero */
-.hero {
-    background-color: var(--blue);
-    color: var(--darkblue);
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    background-color: var(--white);
-    color: var(--darkblue);
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn:hover {
-    background-color: var(--yellow);
-    color: var(--white);
-}
-
-/* About Section */
-.about {
-    padding: 3rem 0;
-}
-
-.about-flex {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.about-text {
-    flex: 1;
-    min-width: 280px;
-}
-
-.about-image {
-    flex: 1;
-    min-width: 280px;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
-/* Sign Up Container */
-.signup-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1.5rem;
-}
-
-.signup-container .btn {
-    background-color: var(--blue);
-    color: var(--white);
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
-}
-
-.signup-container .btn:hover {
-    background-color: var(--dark-blue);
-    color: var(--white);
-}
-
-
-/* Footer */
-footer {
-    background-color: var(--darkest);
-    color: var(--yellow);
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-/* Style the search box */
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 2.5px solid #c2c2c2;
-}
-
-/* Style the navigation menu */
-#myMenu {
-  list-style-type: none;
-  padding: 2;
-  margin: 2;
-}
-
-/* Style the navigation links */
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: black;
-  display: block;
-}
-
-#myMenu li a:hover {
-  background-color: #EAC79A;
-}
-
-
-</styles>
 
 <body>
     <header>
@@ -250,7 +48,7 @@ footer {
                 <p>Optimize is more than just a study club — it's a community where you learn how to learn, master time management, and develop lifelong skills.
 We equip you with the tools, habits, and mindset to become the best version of yourself — in school, work, and life.</p>
 <br>
-			 <div class="card">
+			
       <h2>Search our Presentation List</h2>
 		  <input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." title="Type in a category">
 
@@ -266,7 +64,7 @@ We equip you with the tools, habits, and mindset to become the best version of y
 
 	  
 
-    </div>
+    
 			
             </div>
             <div class="about-image">
